@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AllSafe360 | Protecção total, confiança sem limites</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f10424;
+      color: #0e0d0d;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #00cc66;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 50px;
+      text-align: center;
+      background: white;
+    }
+    .hero h1 {
+      color: #003366;
+    }
+    .section {
+      padding: 40px 20px;
+      background: #ffffff;
+    }
+    .section:nth-child(even) {
+      background: #eaf1f6;
+    }
+    .footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .lang-switch {
+      text-align: center;
+      margin: 10px;
+    }
+    .lang-switch button {
+      padding: 8px 16px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+      });
+    }
+    document.addEventListener('DOMContentLoaded', () => switchLang('pt'));
+  </script>
+</head>
+<body>
+  <header>
+    <h1>AllSafe360</h1>
+    <p data-lang="pt">Protecção total, Confiança sem limites.</p>
+    <p data-lang="en" style="display:none;">Total protection, limitless confidence.</p>
+  </header>
+
+  <div class="lang-switch">
+    <button onclick="switchLang('pt')">Português</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+
+  <nav>
+    <a href="#sobre">Sobre / About</a>
+    <a href="#servicos">Serviços / Services</a>
+    <a href="#Produtos">Produtos / Products</a>
+    <a href="#contacto">Contacto / Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1 data-lang="pt">Bem-vindo à AllSafe360</h1>
+    <h1 data-lang="en" style="display:none;">Welcome to AllSafe360</h1>
+    <p data-lang="pt">Soluções de tecnologia da informação com protecção total e visão 360°.</p>
+    <p data-lang="en" style="display:none;">Information technology solutions with full protection and 360° vision.</p>
+  </div>
+
+  <section class="section" id="sobre">
+    <h2 data-lang="pt">Quem Somos</h2>
+    <h2 data-lang="en" style="display:none;">About Us</h2>
+    <p data-lang="pt">A AllSafe360 é uma empresa moçambicana especializada em cibersegurança, redes, automação e consultoria em TI. Combinamos tecnologia e confiança para garantir tranquilidade digital.</p>
+    <p data-lang="en" style="display:none;">AllSafe360 is a Mozambican company specialized in cybersecurity, networking, automation, and IT consulting. We combine technology and trust to ensure digital peace of mind.</p>
+  </section>
+
+  <section class="section" id="servicos">
+    <h2 data-lang="pt">Serviços</h2>
+    <h2 data-lang="en" style="display:none;">Services</h2>
+    <ul data-lang="pt">
+      <li>Cibersegurança e Protecção de Dados</li>
+      <li>Soluções em Nuvem e Backup Seguro</li>
+      <li>Consultoria em TI</li>
+      <li>Automação com Inteligência Artificial</li>
+      <li>Infraestruturas de Redes</li>
+      <li>Monitoramento e Análise de Riscos</li>
+    </ul>
+    <ul data-lang="en" style="display:none;">
+      <li>Cybersecurity and Data Protection</li>
+      <li>Cloud Solutions and Secure Backup</li>
+      <li>IT Consulting</li>
+      <li>Automation with Artificial Intelligence</li>
+      <li>Network Infrastructure</li>
+      <li>Monitoring and Risk Analysis</li>
+    </ul>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2 data-lang="pt">Contacto</h2>
+    <h2 data-lang="en" style="display:none;">Contact</h2>
+    <p>Email: contacto@allsafe360.co.mz</p>
+    <p>Telefone / Phone: +258 84 2610206</p>
+    <p data-lang="pt">Endereço: Maputo, Moçambique</p>
+    <p data-lang="en" style="display:none;">Address: Maputo, Mozambique</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 AllSafe360. Todos os direitos reservados. / All rights reserved.</p>
+  </footer>
+</body>
+</html>
